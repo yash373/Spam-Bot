@@ -17,4 +17,5 @@ def sendMail(fromEmail, toEmail, subject, message, times):
         "apikey", "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")
     for i in range(times):
         server.sendmail(fromEmail, toEmail, msg.as_string())
+        print(f"Sent Mail ({i+1}/{times}) to {toEmail}")
     server.quit()
