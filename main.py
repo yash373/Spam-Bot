@@ -19,8 +19,11 @@ def main():
         details["Body"],
         int(details["Times"])
     )
-    print("Executed Program Successfully")
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except Exception as e:
+        print("Something went wrong please try again later...")
+    input("Program Was Executed")
